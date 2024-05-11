@@ -1,0 +1,93 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+:root {
+	font-size: 22px;
+	font-family: "Courier New", Courier, monospace;
+}
+body {
+	background: lightblue;
+}
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+h1 {
+	text-align: center;
+}
+.logo {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+}
+.logo:hover {
+	animation-duration: 0.45s;
+	animation-name: slidein;
+}
+ul {
+	padding-left: 10px;
+}
+ul li {
+	background: rgb(139, 139, 139);
+	border-radius: 5px;
+	margin: 10px 0;
+	list-style-type: none;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+ul li:hover {
+	background: rgb(183, 183, 183);
+	transition: all 0.3s;
+	text-align: center;
+}
+#processed-photos-container,
+#original-photos-container {
+	width: 90%;
+	margin: 0 auto;
+}
+#processed-photos-container img,
+#original-photos-container img {
+	width: calc(50% - 30px);
+	margin-left: 15px;
+}
+#processed-photos-container img:hover,
+#original-photos-container img:hover {
+	transition: 0.2s;
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+@keyframes slidein {
+	0% {
+		rotate: 0deg;
+		border: 1px solid orange;
+	}
+
+	20% {
+		rotate: 20deg;
+		border: 2px solid orange;
+	}
+
+	40% {
+		rotate: -20deg;
+		border: 3px solid orange;
+	}
+
+	60% {
+		rotate: 20deg;
+		border: 2px solid orange;
+	}
+
+	80% {
+		rotate: -20deg;
+		border: 1px solid orange;
+	}
+
+	100% {
+		rotate: 0deg;
+		border: 0px solid orange;
+	}
+}
